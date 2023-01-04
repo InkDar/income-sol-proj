@@ -9,78 +9,79 @@
     </v-col>
   </v-row> -->
   <v-row class="mx-0 px-0" id="main-container">
-    <v-col>
-      <img @click="goToHomepage()" src="@/images/logo.png" alt="Home" title="Home"/>
+    <v-col class="logo">
+      <img @click="goToHomepage()" src="@/images/logo.png" alt="Home" title="Home" />
     </v-col>
-    <v-col class="section">
-      <a class="link" href="/">{{ t('services') }}</a>
+    <v-col cols="4.5" class="sections pt-3">
+      <v-row class="ma-0 pa-0">
+        <v-col class="section d-flex align-center justify-center">
+          <!-- <li-text size="xs" fontWeight="fw-6" color="customBlack"> HOME </li-text> -->
+          <li-link path="/"><li-text size="xs" fontWeight="fw-6" color="customBlack"> HOME </li-text></li-link>
+        </v-col>
+        <v-col class="section d-flex align-center justify-center">
+          <!-- <li-text size="xs" fontWeight="fw-6" color="customBlack"> BLOG </li-text> -->
+          <li-link path="/blog"><li-text size="xs" fontWeight="fw-6" color="customBlack"> BLOG </li-text></li-link>
+        </v-col>
+        <v-col class="section d-flex align-center justify-center">
+          <!-- <li-text size="xs" fontWeight="fw-6" color="customBlack"> ABOUT </li-text> -->
+          <li-link path="/about"><li-text size="xs" fontWeight="fw-6" color="customBlack"> ABOUT </li-text></li-link>
+        </v-col>
+        <v-col class="section d-flex align-center justify-center">
+          <!-- <li-text size="xs" fontWeight="fw-6" color="customBlack"> CONTACTS </li-text> -->
+          <li-link path="/contacts"><li-text size="xs" fontWeight="fw-6" color="customBlack"> CONTACTS </li-text></li-link>
+        </v-col>
+      </v-row>
     </v-col>
-    <v-col class="section">
-      <a class="link" href="/path">{{ t('company') }}</a>
-    </v-col>
-    <v-col class="section">
-      <a class="link" href="/path">{{ t('caseStudies') }}</a>
-    </v-col>
-    <v-col class="section">
-      <a class="link" href="/path">{{ t('career') }}</a>
-    </v-col>
-    <v-col class="section">
-      <a class="link" href="/path">{{ t('blog') }}</a>
-    </v-col>
-    <v-col class="section">
-      <a class="link" href="/path">{{ t('contacts') }}</a>
-    </v-col>
+
   </v-row>
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n';
+import { useI18n } from 'vue-i18n';
+import liText from '@/components/shared/li-text.vue';
+import liLink from '@/components/shared/li-link.vue';
+let { t, locale } = useI18n({
+  inheritLocale: true,
+  useScope: 'global',
+});
 
-  let { t, locale } = useI18n({
-    inheritLocale: true,
-    useScope: 'global',
-  });
+// Methods
 
-  // Methods
-
-  const goToHomepage = () => {
-    window.location.href = "/";
-  }
+const goToHomepage = () => {
+  window.location.href = "/";
+}
 </script>
 
 <style scoped lang="scss">
-  #main-container{
-    margin: 10px 10% !important;
+#main-container {
+  margin: 0 0 !important;
+  max-height: 140px;
+  padding-top: 48px;
 
-    .section{
-      padding: 2% 0;
+  .logo {
+    margin-left: 4.95%;
+  }
 
-      .link {
+  .sections {
+    max-width: 605px;
+    max-height: 40px;
+    margin-right: 4.5%;
+
+    .section {
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+      border-radius: 20px;
+
+      span {
         cursor: pointer;
-        text-decoration: none;
-        
-      }
-
-      .link:hover {
-        text-decoration: none;
-        color: red !important;
-      }
-
-      .link:visited {
-        text-decoration: none;
-        color: black;
+        margin: 5px 20px 5px 20px;
       }
     }
-  }
 
-  .locales-container {
-    position: relative;
-    z-index: 100;
-    max-height: 0 !important;
-
-    .locales-column {
-      column-gap: 5px;
-      cursor: pointer;
+    .section:hover {
+      background-color: $TransparentYellow;
+      transition: background-color 0.5s ease;
     }
   }
+}
 </style>

@@ -11,6 +11,10 @@ export const vuetify = createVuetify({
     themes: {
       light: {
         colors: {
+          customBlack: '010101',
+          customWhite: 'FFFDF8',
+          customYellow: 'FFCD4B',
+          TransparentYellow: 'rgba(255, 205, 75, 0.3)',
           primary: '#09e19b',
           secondary: '#f3f3f3',
           darkGreen: '#046344',
