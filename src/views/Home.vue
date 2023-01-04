@@ -1,11 +1,36 @@
 <template>
-  <v-row>
-    <v-col class="d-flex align-center justify-center">
-      <h1>This is the main content</h1>
-    </v-col>
-  </v-row>
+  <div class="main-cont pa-0 ma-0">
+    <hero />
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import hero from '@/components/home/hero.vue';
+</script>
+
+<style scoped lang="scss">
+.main-cont {
+  min-width: 1720px;
+  max-width: 1720px;
+  width: 89.58%;
+  min-height: 940px;
+  max-height: 940px;
+  padding: 2.65% !important;
+  background-color: $customBlack;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0 auto !important;
+  margin-top: 31px !important;
+}
+</style>
+
 <style>
+.v-col {
+  margin: 0;
+  padding: 0;
+}
+
+.v-row {
+  margin: unset !important;
+}
 </style>

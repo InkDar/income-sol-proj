@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mada&display=swap');
 
 // colors
-$chess-black: rgba(245, 242, 225, 0.4);
-$chess-white: rgba(245, 242, 225, 0);
-$text-black: #050400;
+$customBlack: #010101;
+$customWhite: #FFFDF8;
+$customYellow: #FFCD4B;
+$TransparentYellow: rgba(255, 205, 75, 0.3);
 
 // font-sizes
-$fontSizeSm: 24px;
-$fontSizeMd: 28px;
+$fontSizeXXXS: 12px;
+$fontSizeXXS: 16px;
+$fontSizeXS: 20px;
+$fontSizeS: 22px;
+$fontSizeM: 24px;
+$fontSizeL: 28px;
+$fontSizeXL: 30px;
+$fontSizeXXL: 32px;
+$fontSizeXXXL: 40px;
