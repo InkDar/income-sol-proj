@@ -1,31 +1,4 @@
 <template>
-  <!-- <v-row class="main-container">
-    <v-col>
-      <li-text size="xxxl" fontWeight="fw-6" color="customWhite">
-        “Strategy without tactics is the slowest route to victory.
-        Tactics without strategy is the noise before defeat”
-      </li-text>
-    </v-col>
-  </v-row>
-  <v-row>
-    <v-col>
-      <li-text>
-        Sun Tsu
-      </li-text>
-    </v-col>
-  </v-row>
-  <v-row>
-    <v-col>
-      <v-btn>
-        btn 1
-      </v-btn>
-    </v-col>
-    <v-col>
-      <v-btn>
-        btn 2
-      </v-btn>
-    </v-col>
-  </v-row> -->
   <v-row class="main-container">
     <v-col class="pa-0 ma-0">
       <v-row class="d-flex justify-center">
