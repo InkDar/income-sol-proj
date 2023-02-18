@@ -3,11 +3,15 @@
     <hero />
   </div>
   <services />
+  <sec-blog />
+  <about />
 </template>
 
 <script setup lang="ts">
   import hero from '@/components/home/hero.vue';
   import services from '@/components/home/services/services.vue';
+  import secBlog from '@/components/home/blogs/sec-blog.vue';
+  import about from '@/components/home/about.vue';
 </script>
 
 <style scoped lang="scss">
@@ -27,12 +31,12 @@
 </style>
 
 <style lang="scss">
-  .v-col {
-    margin: 0;
-    padding: 0;
-  }
+    .v-col {
+      margin: 0;
+      padding: 0;
+    }
 
-  .v-row {
-    margin: unset !important;
-  }
-</style>
+    .v-row {
+      margin: unset !important;
+    }
+  </style>
