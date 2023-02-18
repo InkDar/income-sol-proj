@@ -5,72 +5,72 @@
 </template>
 
 <script setup lang="ts">
-// Props
-defineProps({
-  size: {
-    type: String,
-    required: false,
-    default: 'md',
-  },
-  color: {
-    type: String,
-    required: false,
-    default: 'customBlack',
-  },
-  fontWeight: {
-    type: String,
-    required: false,
-    default: 'fw-6',
-  }
-});
+  // Props
+  defineProps({
+    size: {
+      type: String,
+      required: false,
+      default: 'md',
+    },
+    color: {
+      type: String,
+      required: false,
+      default: 'customBlack',
+    },
+    fontWeight: {
+      type: String,
+      required: false,
+      default: 'fw-6',
+    }
+  });
 </script>
 
 <style scoped lang="scss">
-span {
-  font-family: 'Nunito';
-}
+  span {
+    font-family: 'Nunito';
+  }
 
-.xxxs {
-  font-size: $fontSizeXXXS;
-}
+  .xxxs {
+    font-size: $fontSizeXXXS;
+  }
 
-.xxs {
-  font-size: $fontSizeXXS;
-}
+  .xxs {
+    font-size: $fontSizeXXS;
+  }
 
-.xs {
-  font-size: $fontSizeXS;
-}
+  .xs {
+    font-size: $fontSizeXS;
+  }
 
-.s {
-  font-size: $fontSizeS;
-}
+  .s {
+    font-size: $fontSizeS;
+  }
 
-.m {
-  font-size: $fontSizeM;
-}
+  .m {
+    font-size: $fontSizeM;
+  }
 
-.l {
-  font-size: $fontSizeL;
-}
+  .l {
+    font-size: $fontSizeL;
+  }
 
-.xl {
-  font-size: $fontSizeXXL;
-}
+  .xl {
+    font-size: $fontSizeXXL;
+  }
 
-.xxl {
-  font-size: $fontSizeXXL;
-}
+  .xxl {
+    font-size: $fontSizeXXL;
+  }
 
-.xxxl {
-  font-size: $fontSizeXXXL;
-}
+  .xxxl {
+    font-size: $fontSizeXXXL;
+  }
 
-.fw-6 {
-  font-weight: 600;
-}
+  .fw-6 {
+    font-weight: 600;
+  }
 
-.fw-7 {
-  font-weight: 700;
-}
+  .fw-7 {
+    font-weight: 700;
+  }
 </style>

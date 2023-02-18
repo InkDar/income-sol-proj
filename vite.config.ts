@@ -5,6 +5,11 @@ import vueI18n from '@intlify/vite-plugin-vue-i18n';
 import { join, resolve } from 'path';
 export default defineConfig({
   mode: 'development',
+  server: {
+    watch: {
+      usePolling: false,
+    },
+  },
   resolve: {
     alias: {
       '@': join(__dirname, './src'),

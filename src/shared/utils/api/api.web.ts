@@ -2,11 +2,11 @@ import axios, { AxiosRequestConfig } from 'axios';
 import { ApiRequestInternal, ApiResponse, QueryParams, RequestBody, RequestMethod } from '@/shared/utils/api/types';
 
 let token;
-if (window.localStorage.getItem('vuex')) {
-  token = JSON.parse(<any>window.localStorage.getItem('vuex')).UserStore.user.token;
-} else {
-  token = '';
-}
+// if (window.localStorage.getItem('vuex')) {
+//   token = JSON.parse(<any>window.localStorage.getItem('vuex')).UserStore.user.token;
+// } else {
+//   token = '';
+// }
 const defaults = {
   baseURL: import.meta.env.VITE_WEB_API_BASE_URL || 'http://localhost:8080',
   headers: {
