@@ -5,6 +5,7 @@
   <services />
   <sec-blog />
   <about />
+  <contact-us />
 </template>
 
 <script setup lang="ts">
@@ -12,6 +13,7 @@
   import services from '@/components/home/services/services.vue';
   import secBlog from '@/components/home/blogs/sec-blog.vue';
   import about from '@/components/home/about.vue';
+  import contactUs from '@/components/home/contact-us.vue';
 </script>
 
 <style scoped lang="scss">
@@ -31,12 +33,12 @@
 </style>
 
 <style lang="scss">
-    .v-col {
-      margin: 0;
-      padding: 0;
-    }
+  .v-col {
+    margin: 0;
+    padding: 0;
+  }
 
-    .v-row {
-      margin: unset !important;
-    }
-  </style>
+  .v-row {
+    margin: unset !important;
+  }
+</style>
