@@ -37,9 +37,9 @@
 <script setup lang="ts">
   import liText from '@/components/shared/li-text.vue';
   import Blog from '@/types/blog';
-  import { onMounted, PropType } from 'vue';
-
-
+  import { PropType } from 'vue';
+  
+  
   // Props
   const props = defineProps({
     index: {
@@ -51,13 +51,13 @@
       required: true,
     }
   })
-
+  
   // Data
   const textProps = {
     start: 0,
     end: 251,
   }
-
+  
   // Methods
   const setUrl = (index: number) => new URL(`../../../images/blog-icons/chess-fig-${index}.png`, import.meta.url);
   const readMoreSign = (index: number) => {
@@ -69,8 +69,6 @@
     }
   }
   const cutText = (text: string) => text.substring(textProps.start, textProps.end);
-
-  onMounted(() => console.log(props.blog))
 </script>
 
 <style scoped lang="scss">
@@ -205,6 +203,4 @@
     height: 449px;
     width: 639px;
   }
-
-
 </style>
