@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col class="aboutWrapper">
-      <v-row class="about-text d-flex justify-center align-center">
+      <v-row id="aboutUs" class="about-text d-flex justify-center align-center">
         <li-text size="xxxl" font-weight="fw-7" color="customBlack">ABOUT US</li-text>
       </v-row>
       <v-row class="aboutMainCont">

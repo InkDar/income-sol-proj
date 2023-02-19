@@ -5,18 +5,19 @@
 </template>
 
 <script setup lang="ts">
-// Props
-defineProps({
-  path: {
-    type: String,
-    required: true,
-  },
-});
+  // Props
+  defineProps({
+    path: {
+      type: String,
+      required: false,
+      default: "/",
+    },
+  });
 </script>
 
 <style scoped lang="scss">
-.link {
-  text-decoration: none;
-  position: relative;
-}
+  .link {
+    text-decoration: none;
+    position: relative;
+  }
 </style>
